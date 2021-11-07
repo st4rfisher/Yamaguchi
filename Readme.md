@@ -1,3 +1,9 @@
-npm install -g sass
-sass source/scss/styles.scss build/css/styles.css 
+# Структура проекта
+* fonts - шрифты
+* images - картинки и svg
+* js/modules - модули js
+* scss/blocks - стилизация блоков по БЭМ
+* scss/global - глобальная стилизация 
+* tasks - gulp-таски
 
+    
