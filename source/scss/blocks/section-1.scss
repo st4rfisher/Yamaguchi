@@ -1,0 +1,146 @@
+
+.section-1 {
+ background-color: $color5;
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    padding: 0 0 37px 0;
+  }
+}
+
+.section-1__title {
+  @include title-1;
+  padding: 11px 40px 10px 12px;
+
+  @media (min-width: $desktop) {
+    @include title-3;
+    width: min-content;
+    text-transform: none;
+    padding: 25px 122px 25px 112px;
+  }
+}
+
+.section-1__paragraph {
+  @include paragraph-1;
+  padding: 14px 12px 13px 12px;
+
+  @media (min-width: $desktop) {
+    grid-column: 2 / 3;
+    font-size: 22px;
+    line-height: 37px;
+    padding: 17px 345px 29px 114px;
+
+    &--1 {
+      grid-row: 2 / 3;
+    }
+
+    &--2 {
+      grid-row: 3 / 4;
+    }
+  }
+}
+
+.section-1__button {
+  @include button;
+  @include paragraph-1;
+  position: absolute;
+  font-size: 12px;
+  line-height: 21px;
+
+  &--up {
+    top: 131px;
+    left: 67px;
+
+    @media (min-width: $desktop) {
+      top: auto;
+      bottom: 186px;
+      width: 200px;
+      height: 200px;
+      left: 316px;
+      font-size: 40px;
+      line-height: 68px;
+      text-transform: lowercase;
+      padding: 22px 40px 39px 40px;
+    }
+  }
+
+  &--down {
+    top: 131px;
+    left: 151px;
+
+    @media (min-width: $desktop) {
+      top: auto;
+      bottom: 189px;
+      width: 200px;
+      height: 200px;
+      left: auto;
+      right: 170px;
+      font-size: 40px;
+      line-height: 68px;
+      text-transform: lowercase;
+      padding: 22px 40px 39px 40px;
+    }
+  }
+}
+
+.section-1__image-block {
+  position: relative;
+  margin: 33px 10px 24px 8px;
+  height: 276px;
+
+  @media (min-width: $desktop) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.section-1__image {
+  position: absolute;
+
+  &--1 {
+    top: 0;
+    left: 0;
+    width: 300px;
+
+    @media (min-width: $desktop) {
+      top: 80px;
+      left: 113px;
+      width: 879px;
+    }
+  }
+
+  &--2 {
+    top: 146px;
+    left: 26px;
+    width: 248px;
+
+    @media (min-width: $desktop) {
+      top: auto;
+      bottom: 19px;
+      left: 188px;
+      width: 728px;
+    }
+  }
+
+  &--move-up {
+    transition: 1.2s;
+    transform: translateY(-30px);
+
+    @media (min-width: $desktop) {
+      transform: translateY(-50px);
+    }
+  }
+
+  &--move-down {
+    transition: 1.2s;
+    transform: translateY(20px);
+
+    @media (min-width: $desktop) {
+      transform: translateY(50px);
+    }
+  }
+}

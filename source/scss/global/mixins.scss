@@ -1,65 +1,71 @@
-@mixin text {
-  font-family: "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-  word-break: break-word;
-  letter-spacing: 0.04em;
+@mixin title-1 {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $color3;
 }
 
-@mixin button-colored {
-  @include text;
-  background-color: $color4;
-  border: none;
-  border-radius: 0px 3px 3px 0px;
-  color: $color1;
+@mixin paragraph-1 {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $color4;
+}
+
+@mixin title-2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 38px;
+  color: $color5;
+}
+
+@mixin paragraph-2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $color5;
 }
 
 @mixin button {
-  @include text;
-  background-color: transparent;
-  border: 1px solid $color5;
-  border-radius: 3px;
-  color: $color1;
+  border: none;
+  outline: none;
+  background-color: $color2;
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color2, 30%);
+    box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    background-color: darken($color2, 30%);
+    box-shadow: none;
+    transform: scale(1);
+  }
 }
 
-@mixin title {
-  font-family: Arial, "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 32px;
+@mixin paragraph-3 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  color: $color5;
+  text-transform: uppercase;
 }
 
-
-@mixin paragraph {
-  font-family: "Open Sans", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  word-break: break-word;
-  letter-spacing: 0.03em;
-}
-
-@mixin paragraph {
-  font-family: "Open Sans", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  word-break: break-word;
-  letter-spacing: 0.03em;
-}
-
-@mixin paragraph-mini {
-  font-family: "Open Sans", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  word-break: break-word;
-  letter-spacing: 0.03em;
+@mixin title-3 {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 62px;
+  line-height: 62px;
+  color: $color4;
 }
 

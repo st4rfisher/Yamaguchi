@@ -1,22 +1,48 @@
 @font-face {
-  font-family: "Arial";
-  font-weight: 400;
+  font-family: "Bebas Neue";
   font-style: normal;
+  font-weight: 700;
   font-display: swap;
-  src: local("Arial"),
-    url("../fonts/Arial.woff2") format("woff2"),
-    url("../fonts/Arial.woff") format("woff");
+  src: url('../fonts/bebasneue.eot');
+  src: local("BebasNeue"),
+    url("../fonts/bebasneue.woff2") format("woff2"),
+    url("../fonts/bebasneue.woff") format("woff"),
+
+    url("../fonts/bebasneue.svg") format("svg");
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Ubuntu"),
+    url("../fonts/ubuntu.woff2") format("woff2"),
+    url("../fonts/ubuntu.woff") format("woff"),
+    url("../fonts/ubuntu.ttf") format("truetype"),
+    url("../fonts/ubuntu.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("Arial"),
-    url("../fonts/Open-Sans.woff2") format("woff2"),
-    url("../fonts/Open-Sans.woff") format("woff");
+  src: local("Ubuntu"),
+    url("../fonts/montserrat-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-regular.woff") format("woff"),
+    url('../fonts/montserrat-regular.ttf') format('truetype'),
+    url('../fonts/montserrat-regular.svg') format('svg');
 }
 
-
-
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: local("Ubuntu"),
+    url("../fonts/montserrat-black.woff2") format("woff2"),
+    url("../fonts/montserrat-black.woff") format("woff"),
+    url('../fonts/montserrat-black.ttf') format('truetype'),
+    url('../fonts/montserrat-black.svg') format('svg');
+}
