@@ -6,4 +6,5 @@
 * scss/global - глобальная стилизация 
 * tasks - gulp-таски
 
+Deploy-version: https://st4rfisher.github.io/Yamaguchi/build/index.html
     
