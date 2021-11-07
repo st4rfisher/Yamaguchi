@@ -24,7 +24,7 @@
 
 .section-2__paragraph {
   @include paragraph-2;
-  padding: 13px 13px 4px 17px;
+  padding: 13px 13px 8px 17px;
 
   @media (min-width: $desktop) {
     font-size: 22px;
