@@ -158,6 +158,12 @@
     }
   }
 
+  &--quotes {
+    @media (min-width: $desktop) {
+      margin-left: 65px;
+    }
+  }
+
   &--2 {
     @include paragraph-3;
     font-size: 62px;
