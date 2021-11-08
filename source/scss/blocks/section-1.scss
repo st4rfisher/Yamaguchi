@@ -16,7 +16,7 @@
 
   @media (min-width: $desktop) {
     @include title-3;
-    min-width: 430px;
+    max-width: 435px;
     color: $color3;
     text-transform: none;
     padding: 25px 122px 25px 112px;
