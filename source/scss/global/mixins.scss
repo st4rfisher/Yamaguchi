@@ -40,11 +40,10 @@
   outline: none;
   background-color: $color2;
   border-radius: 50%;
-  min-width: 61px;
-  min-height: 61px;
   transition: 0.3s;
   cursor: pointer;
   word-break: break-word;
+  padding: 10px;
 
   &:hover {
     background-color: darken($color2, 30%);
