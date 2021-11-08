@@ -5,6 +5,7 @@
   line-height: 100%;
   text-transform: uppercase;
   color: $color3;
+  word-break: break-word;
 }
 
 @mixin paragraph-1 {
@@ -13,6 +14,7 @@
   font-size: 16px;
   line-height: 27px;
   color: $color4;
+  word-break: break-word;
 }
 
 @mixin title-2 {
@@ -21,6 +23,7 @@
   font-size: 34px;
   line-height: 38px;
   color: $color5;
+  word-break: break-word;
 }
 
 @mixin paragraph-2 {
@@ -29,6 +32,7 @@
   font-size: 16px;
   line-height: 27px;
   color: $color5;
+  word-break: break-word;
 }
 
 @mixin button {
@@ -36,10 +40,11 @@
   outline: none;
   background-color: $color2;
   border-radius: 50%;
-  width: 61px;
-  height: 61px;
+  min-width: 61px;
+  min-height: 61px;
   transition: 0.3s;
   cursor: pointer;
+  word-break: break-word;
 
   &:hover {
     background-color: darken($color2, 30%);
@@ -59,6 +64,7 @@
   font-weight: 900;
   color: $color5;
   text-transform: uppercase;
+  word-break: break-word;
 }
 
 @mixin title-3 {
@@ -67,5 +73,6 @@
   font-size: 62px;
   line-height: 62px;
   color: $color4;
+  word-break: break-word;
 }
 
